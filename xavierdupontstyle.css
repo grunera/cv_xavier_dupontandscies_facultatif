@@ -1,0 +1,682 @@
+/* éléments principaux de la page */
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('./fonts/oxygen-regular-webfont.eot');
+    src: url('./fonts/oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/oxygen-regular-webfont.woff2') format('woff2'),
+         url('./fonts/oxygen-regular-webfont.woff') format('woff'),
+         url('./fonts/oxygen-regular-webfont.ttf') format('truetype'),
+         url('./fonts/oxygen-regular-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('./fonts/rubik-regular-webfont.eot');
+    src: url('./fonts/rubik-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/rubik-regular-webfont.woff2') format('woff2'),
+         url('./fonts/rubik-regular-webfont.woff') format('woff'),
+         url('./fonts/rubik-regular-webfont.ttf') format('truetype'),
+         url('./fonts/rubik-regular-webfont.svg#rubikregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments par défaut pour tout le bloc page*/
+body
+{
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    background-size: cover;
+    width: none;
+    font-family: 'oxygenregular', 'Trebuchet MS', Arial, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-weight: lighter;
+    color: rgb( 65, 65, 65);
+
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin-left:165px;
+    margin-right:165px;
+    margin-top:30px;
+    border: 1px solid rgb(200,200,200);
+    
+}
+
+/* HEADER */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width: 603px;
+}
+#photo_audrey
+{   
+    background-color: rgb(241,213,201);
+    width:284px;
+    height:250px;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+#photo_audrey img
+{
+    width: 65%;
+    height:179px;
+    border-radius:50%;
+    border: 5px solid rgba( 205,97,50, 0.5);
+    margin-top:40px;
+}
+
+
+header h1
+{
+    font-size: 3.2em ;
+    font-weight: lighter;
+    font-style: normal;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+header h1+p
+{
+    font-weight: bold;
+    color: rgb( 85, 85, 85);
+    font-size:1.6em;
+    margin-top:0;
+    padding-top:0;
+}
+
+.name
+{
+    color: rgb(205,97,50);
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.border
+{ border-bottom: 1.5px solid rgb(221,150,119); 
+  margin-top:1px;
+}
+
+/*MAIN*/
+
+main
+{ 
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:nowrap;
+}
+
+/*ASIDE*/
+
+aside 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241,213,201);
+    width: 30.2%;
+    height:1425px;
+    font-size: 1em;
+    margin:0;
+    padding:0;
+}
+
+#contact
+{
+    width:100%;
+    height:80px;
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+#Apropos
+{
+    width:100%;
+    height:300px;
+}
+
+#loisirs
+{
+    width:100%;
+    height:150px ;
+}
+
+aside h2
+{
+    font-size: 1.6em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: rgb(205,97,50);
+    background-color: rgb(64,64,64);
+    text-align: center;
+    padding-top:4px;
+    padding-bottom: 4px;
+    margin-left:0;
+    margin-right:0;
+}
+
+address p
+{ 
+    text-align: left;
+    margin-left:30px;
+    margin-right:20px; 
+    padding-left:0;
+    margin-top:40px;
+}
+
+a
+{
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: white;
+}
+
+aside p
+{
+    text-align: justify;
+    font-style: normal;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:40px;
+    padding-top:40px;
+}
+
+#loisirs_icone 
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+aside i
+{   border: 1px solid rgb(64,64,64);
+    width: 45px;
+    height: 41px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2.7em;
+    padding-top:5px;
+}
+    
+/*SECTION*/
+
+section
+{
+    width:69.8%;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+}
+
+.title
+{ 
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    height:50px;
+    border-bottom: 1px solid rgb(221,150,119);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-left:43px;
+    margin-right:20px;
+}
+
+.icone_title
+{
+   margin-right: 40px;
+}
+
+section i
+{
+    color: rgb(221,150,119);
+    font-size: 1.2em;
+    padding-top:2px;
+}
+
+.contenu_rubriques
+{ 
+    margin-top: 20px;
+    margin-right:20px;
+    margin-left:43px; 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dateetlieu
+{ 
+    width:100px;
+    margin-top:0;
+    padding-top:0;
+    margin-left:10px; 
+}
+
+p span
+{ 
+    font-weight: bold;
+    margin-top:8px;
+    margin-bottom:8px;
+    padding-top:2px;
+    padding-bottom:10px;
+    height:10px;
+}
+
+.contenu_rubriques_anddotcircle
+{   
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+}
+
+.contenu_rubriques_circle
+{   
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+}
+
+.texte_contenu_rubrique
+{
+    width:80%;
+    margin-left: 20px;
+    padding-left:0px;
+    padding-right:20px;
+    text-align: justify;
+}
+
+.texth4 p
+{
+    margin-top: 0px;
+    font-size: 0.8em;
+    font-weight: lighter;
+    text-align:justify;
+}
+
+article h4
+{ 
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:0;
+  color: rgb( 26, 26, 26); 
+}
+
+
+
+section h5
+{
+  color: rgb( 26, 26, 26);
+}
+
+.contenu_rubriques_anddotcircle i
+{ 
+    font-size: 1.2em;
+    padding-bottom:20px;
+    margin-bottom:10px;
+    padding-right:0px;
+    margin-right:0px;
+}
+
+.contenu_rubriques_circle i
+{ 
+    font-size: 0.8em; 
+    padding-top:3px;
+}
+
+#recotext
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:50px;
+    margin-right:30px;
+}
+
+#reco2
+{
+    margin-right:20px;
+}
+
+h5
+{
+    font-size:1.0em;
+    font-weight:bold;
+}
+
+.texth5 
+{ 
+  font-size:0.9em; 
+}
+
+/* REGLES FORMAT RESPONSIVE MAX-WIDTH 1000PX (inclus mobiles Galaxy Samsung 360px, IPhone 6 375,
+ I Pad 768px - I PAD PRO 1024PX NON INCLUS CAR IDEM DESKTOP*/
+
+
+@media all and (max-width: 1000px)
+{
+      body
+      {
+        background-color: white;
+        font-size: 2.4em;
+        margin:0px;
+      }
+
+      #bloc_page
+      {
+          border:none;
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+      }
+
+
+      /*HEADER*/
+
+      header
+      {
+          width: auto;
+          margin-left: 0;
+          padding-left:0;
+          margin-top:40px;
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+      #photo_audrey:nth-child(1)
+        {
+          order: 2;
+          width: auto;
+          padding-bottom: 10px;
+        }
+
+      #titre_principal:nth-child(2)
+        {
+          order: 1;
+          width: auto;
+          margin: 0px;
+          padding-bottom: 0px;
+          padding-top: 10px;
+          text-align: center;
+        }
+
+      #titre_principal
+      {
+          margin-bottom:400px;
+          height:150px;
+
+      }
+
+      header h1
+      {
+        text-align: center;
+        font-size:5em;
+        margin-left:100px;
+        margin-right:100px;
+        margin-top:120px;
+        padding:0px;
+      }
+
+
+      .montitre
+      {
+        text-align: center;
+        font-size: 1.85em;
+        font-weight: bold;
+        color: black;
+        padding-right:50px;
+        margin-top:50px;
+        padding-bottom:0px;
+        margin-bottom:0px;
+      }
+
+
+      .border
+      { border-bottom: 1.5px solid rgb(254,202,7); 
+        margin-top:0px;
+        padding-top:0px;
+      }
+
+
+      #photo_audrey
+      {   
+          margin-top:435px;
+          padding-top:20px;
+          padding-bottom:20px;
+          height:500px;
+      }
+
+      #photo_audrey img
+      {   
+         width: 380px;
+         height: 380px;
+         border: 9px solid rgba( 129, 105, 22, 0.4);
+      }
+
+      header h1+p
+       {
+          font-size: 3.5em;
+       }
+
+
+      
+      /*MAIN */
+
+      main
+      { display: flex;
+        flex-direction: column; 
+        width: auto;
+      }
+
+      aside:nth-child(1)
+      { order: 2;
+        width: auto;
+        text-align: center; }
+
+      section:nth-child(2)
+      { 
+        order: 1;
+        width: auto; }
+
+      /*SECTION */
+
+      .title
+      {
+        text-align: center; 
+        margin-top:0px;
+        margin-left:0px;
+        height:90px;
+      }
+
+      .icone_title
+      { 
+        text-align:right;
+        margin-left:230px; 
+        margin-right:0px
+      }
+
+      article
+      { width: auto; 
+      }
+
+      section h3
+      { 
+        margin-left:45px;
+        font-weight:bold;
+        font-size:1.1em;
+        width:800px;
+        text-align:left;
+      }
+
+      .contenu_rubriques_circle i
+      { 
+         padding-top:10px;
+      }
+
+      .dateetlieu
+      {
+        margin-left:40px;
+        font-weight:bold;
+        color:black;
+        text-align: left;
+        width:200px;
+      }
+
+      .contenu_rubriques
+      {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top:50px;
+      }
+
+      .texte_contenu_rubrique
+      { 
+        text-align: justify;
+        margin-right:30px;
+        margin-left:0px;
+        width:800px;
+      }
+
+      #reco1
+      { 
+        width:400px; 
+      }
+
+      /*ASIDE */
+
+      aside
+      { 
+        display: flex;
+        flex-direction: column; 
+        text-align: left;
+        justify-content: flex-start;
+        height:1400px;
+      }
+
+
+
+      #contact:nth-child(1)
+      { order: 3;
+        width: 900px;
+        height:600px;
+        margin-top:80px;
+      }
+
+      #Apropos:nth-child(2)
+      { 
+        order: 1;
+        width: auto;
+        height:auto; }
+
+      #loisirs:nth-child(3)
+      {
+        order: 2;
+        margin-top:0px;
+      }
+
+      address
+      {
+        margin-left:43px;
+      }
+
+      address p
+      {
+        color:rgb( 27, 27, 27);
+        font-weight: bold;
+        margin-top:20px;
+        padding-top:150px;
+      }
+
+      a
+      {
+        color: rgb( 27, 27, 27);
+      }
+
+      aside p
+      {
+        margin-left: 43px;
+        padding-right: 40px;
+        margin-top:10px;
+        padding-top:0px;
+      }
+
+      aside h2
+      {
+        margin-top:0px;
+        margin-bottom:0px;
+        font-size:1.5em;
+      }
+
+
+      #contact p
+      { 
+          padding-top:20px;
+          margin-bottom:0px;
+          margin-top:10px;
+          text-align: center;
+      }
+
+      #loisirs h2
+      {
+        margin-bottom: 35px;
+      }
+
+
+      #Apropos p
+      {
+        padding-top:0px;
+        margin-bottom:20px;
+        margin-top:30px;
+      }
+
+      aside i
+      {   border: 1px solid rgb(64,64,64);
+          width: 85px;
+          height: 80px;
+          text-align: center;
+          border-radius: 50%;
+          font-size: 2.7em;
+          padding-top:5px;
+      }
+
+}
+
+
+
+ 
